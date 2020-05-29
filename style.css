@@ -1,0 +1,496 @@
+@charset "utf-8";
+
+
+/* ========================================
+    リセットcss
+========================================= */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+
+/* ========================================
+    全体設定
+========================================= */
+
+body {
+  color: #474747;
+  font-size: 14px;
+	font-family: "メイリオ", "Meiryo", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color:#474747;
+}
+
+
+/* ========================================
+    ヘッダー
+========================================= */
+
+header {
+  width: 100%;
+  height: 36px;
+  border-top: 4px solid #e66464;
+  padding: 28px 0;
+}
+
+#header-inner {
+  width: 978px;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+header ul {
+  display: flex;
+  margin-top: 10px;
+}
+
+header ul li {
+  margin-top: 10px;
+  margin-right: 20px;
+  border-left: 1px solid #eae9e7;
+  padding-left: 25px;
+}
+
+header ul li a {
+  text-decoration: none;
+}
+
+header ul li:last-child a {
+  padding-right: 25px;
+  border-right: 1px solid #eae9e7;
+}
+
+
+/* ========================================
+メイン画像
+========================================= */
+
+#mainimage {
+  width: 100%;
+  height: 392px;
+  background: url(images/mainimage.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+#main-image {
+  width: 978px;
+  height: auto;
+  padding: 50px 30px;
+  margin: 0 auto;
+}
+
+.taitle {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+#mainimage h1 {
+  margin-bottom: 15px;
+}
+
+#mainimage .text {
+  margin-bottom: 20px;
+}
+
+
+/* ========================================
+授業内容
+========================================= */
+
+#introduction {
+  width: 100%;
+  height: auto;
+  background-color: #ed7c7c;
+}
+
+#introduction-wrapper {
+  width: 978px;
+  height: auto;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+#introduction-title {
+  width: 100%;
+  display: flex;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#introduction-title h2 {
+  font-size: 25px;
+  font-weight: 900;
+  border-bottom: 4px solid white;
+  display: inline-block;
+  padding-bottom: 15px;
+  margin-right: 20px;
+}
+
+#introduction-title p {
+  margin-top: 10px;
+}
+
+#introduction-conts {
+  display: flex;
+}
+
+#introduction h3 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+#introduction-list {
+  width: 632px;
+  height: 222px;
+  background-color: white;
+  padding: 15px;
+}
+
+#introduction-list ul {
+  display: flex;
+  margin
+}
+
+#introduction-list ul li {
+  width: 200px;
+  height: auto;
+  margin-right: 16px;
+}
+
+#introduction-list ul li:last-child {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+#introduction-list ul li dl dt {
+  height: 131px;
+}
+
+#introduction-list dl dd.teacher_comment {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
+/* ========================================
+    コース紹介
+========================================= */
+
+#course {
+  width: 286px;
+  height: auto;
+  background-color: white;
+  margin-left: 50px;
+}
+
+#course h2 {
+  margin: 15px;
+}
+
+#course-item ul li {
+  padding: 15px;
+  padding-right: 50px;
+}
+
+#course-item ul li a {
+  display: flex;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 37px;
+}
+
+#course-item ul li a p {
+  margin-left: 10px;
+}
+
+#course h2 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#course ul li {
+  border-top: 1px #eae9e7 solid;
+}
+
+
+/* ========================================
+    料金体制
+========================================= */
+
+#price {
+  width: 100%;
+  height: 453px;
+  background-color: rgb(247, 247, 247);
+}
+
+#price-wrapper {
+  width: 978px;
+  height: auto;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+#price-title {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#price #price-wrapper #price-title h2 {
+  font-size: 25px;
+  font-weight: 600;
+  display: inline-block;
+  border-bottom: 4px solid #ed7c7c;
+  padding-bottom: 5px;
+}
+
+#price-title p {
+  margin-top: 10px;
+  margin-left: 30px; 
+}
+
+#price-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-item {
+  background-color: white;
+}
+
+.plan {
+  font-size: 20px;
+}
+
+.price {
+  color: #ed7c7c;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.price span {
+  margin-left: 10px;
+}
+
+ .price{
+  border-bottom: 1px solid #eae9e7;
+}
+
+#price ul li {
+  width: 276px;
+  height: 290px;
+  background-color: #fff;
+  padding: 15px;
+  position: relative;
+}
+
+#price ul li dd {
+  border-bottom: 1px solid #eae9e7;
+  line-height: 45px;
+}
+
+#price a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  background-color: #ed7c7c;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px 20px;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+
+/* ========================================
+    フッター
+========================================= */
+
+footer {
+  width: auto;
+  height: 73px;
+  background-color: rgb(80, 78, 78);
+  color: white;
+  text-align: center;
+  line-height: 75px;
+}
+
+
+/* ========================================
+    レスポンシブ 
+========================================= */
+
+
+@media screen and (max-width: 978px) {
+  header nav {
+    display: none;
+  }
+
+  #header_inner {
+    width: auto;
+  }
+
+  header img {
+    padding: 0 30px;
+  }
+
+  #mainimage {
+    width: 100%;
+    height: auto;
+  }
+
+  #main-image {
+    width: auto;
+    height: auto;
+  }
+
+  
+  #introduction-wrapper {
+    width: auto;
+    padding: 30px;
+  }
+
+  #introduction-title {
+    flex-flow: column;
+  }
+
+  #introduction-conts {
+    flex-flow: column;
+  }
+
+  #introduction-list {
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  #introduction-list ul li {
+    width: 32%
+  }
+  
+  #introduction-list ul li img {
+    width: 100%;
+  }
+
+  #introduction-list ul li dl dt {
+    width: auto;
+    height: auto;
+    margin-right: 0;
+  }
+
+  #course {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #price {
+    height: auto;
+  }
+
+  #price-wrapper {
+    width: auto;
+    padding: 30px;
+  }
+
+  #price-title {
+    width: 100%;
+    flex-flow: column;
+  }
+
+  #price-title p {
+    margin-left: 0;
+  }
+
+  #price-list {
+    flex-flow: column;
+  }
+
+  .price-item {
+    margin-bottom: 10px;
+  }
+
+  #price-list ul li {
+    width: auto;
+    height: auto;
+  }
+
+  #price-list a {
+    position: static;
+    display: block;
+    padding: 0;
+    margin-top: 15px;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width: 620px) {
+  #mainimage img {
+    width: 100%;
+  }
+
+  #introduction-list ul {
+    flex-flow: column;
+  }
+
+  #introduction-list ul li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #introduction-list ul li img {
+    width: 100%;
+  }
+}
